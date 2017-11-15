@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">	
+
+<suite thread-count="1" verbose="3" name="TEST Sample 1 - Test Suite" annotations="JDK" parallel="classes">
+  <test name="Sample_01">
+  	<parameter name="ExcelFile" value="TestDataSample.xls"></parameter>
+  	<parameter name="ExcelSheet" value="Sample_01"></parameter>
+  	<classes>
+    	<class name="VSSE.APITesting.TCs.CorrelationTCs_ValuesValidation"/>
+    </classes>
+  </test>
+</suite>
+
