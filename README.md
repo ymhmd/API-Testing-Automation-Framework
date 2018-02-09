@@ -49,4 +49,4 @@ Future Work
 2. To support Business Driven Develpment (BDD) test cases
 3. Simple GUI should be used to execute test suites instead of using command line
 
-![alt text](screenshots/BDD.png "Description goes here")
+![alt text](screenshots/BDD.PNG)
