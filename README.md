@@ -4,7 +4,7 @@ Used tools and frameworks
 ---------------------------------------
 1. Rest-Assured
 2. Maven repository 
-3. TestNg
+3. TestNG
 4. Jxl to extract test data from Excel files
 
 Projects
