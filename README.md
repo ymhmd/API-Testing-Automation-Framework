@@ -35,18 +35,49 @@ New Features in version 2.0
 
 New Features in version 3.0
 -----------------------------
-1. Vesion 3.0 supports BDD test cases: The first column called "Description" should have simple plain text illustrating what each step does.
-2. 
+1. Version 3.0 supports BDD test cases: The first column called "Description" should have simple plain text illustrating what each step does.
 
-Demo
+![alt text](screenshots/BDD.PNG)
+
+2. Version 3.0 can integrate with Jira to log bugs automatically. The following Jira configuration json file should be passed to the framework to determine required variables such as your Jira domain, email/password of the reporter, in which project the bug is reported and bug priority. Integration with Jira can be disabled by set `false` to key `enable` in Jira json configuration file.
+```
+{
+	"enbale" : true, 
+	"domain" : "your_jira_domain",
+	"email" : "your_email",
+	"password" : "your_password",
+	"projectKey" : "your_project_key",
+	"issueType" : "Bug/Task/Subtask ....",
+	"priority" : "Low/High ...."
+}
+```
+3. The summary of the reported bug in Jira refers to "step number" and the "step description" in the first column in the Excel file.
+
+
+# Demo
+
+For Version 2.0
 ----------
-1. In the command line execute : `java -jar APITool_1.0.jar Runners\Sample2_Runner.xml`.
+1. In the command line execute : `java -jar WebservicesTestZona_2.0.jar Runners\Sample2_Runner.xml`.
 2. It generates test-output directory which contains the TestNG HTML and XML reports.
+
+
+For Version 3.0
+----------
+1. Go to directory Configs > update `jira.json` file with the required values.
+2. In the command line execute : `java -jar  Runners\Sample2_Runner.xml Configs\jira.json`.
+3. It generates test-output directory which contains the TestNG HTML and XML reports.
+4. In case Integration with Jira is disabled, No Bugs are reported to Jira. On the other hand, failed test cases are reported in Jira as Bugs in case Integration with Jira is enabled.
+5. In case Integration with Jira is enabled and there are no test cases are failed, No Bugs are reported to Jira.
+6. In cases Integration with Jira is enabled and there are some test cases failed, these test are reported into Jira as Bugs.
+
+![alt text](screenshots/JIRA_1.PNG)
+
+![alt text](screenshots/JIRA_2.PNG)
+
 
 Future Work
 ------------
-1. To integrate with Jira to log bugs automatically as soon as having bugs 
-2. To support Business Driven Develpment (BDD) test cases
+1. To integrate with Jira to log bugs automatically as soon as having bugs > Done in Version 3.0
+2. To support Business Driven Development (BDD) test cases -> Done in Version 3.0
 3. Simple GUI should be used to execute test suites instead of using command line
-
-![alt text](screenshots/BDD.PNG)
