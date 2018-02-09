@@ -67,7 +67,7 @@ For Version 2.0
 For Version 3.0
 ----------
 1. Go to directory Configs > update `jira.json` file with the required values.
-2. In the command line execute : `java -jar  Runners\Sample2_Runner.xml Configs\jira.json`.
+2. In the command line execute : `java -jar APITool_3.0.jar Runners\Sample2_Runner.xml Configs\jira.json`.
 3. It generates test-output directory which contains the TestNG HTML and XML reports.
 4. In case Integration with Jira is disabled, No Bugs are reported to Jira. On the other hand, failed test cases are reported in Jira as Bugs in case Integration with Jira is enabled.
 5. In case Integration with Jira is enabled and there are no test cases are failed, No Bugs are reported to Jira.
