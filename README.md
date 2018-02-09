@@ -27,12 +27,26 @@ The predefined schema in that format:
 
 
 New Features in version 2.0
------------------
+-----------------------------
 1. The returned cookies can be validated using keyword `cookie:` 
 2. The returned cookies can be reused in the next steps using keyword `#prev_cookies_res[STEP]:PREV_COOKIE_KEY`
 * NB: For more details how to use cookie keywords, Please refer to TestDataSample.xls > sample_04
+
+
+New Features in version 3.0
+-----------------------------
+1. Vesion 3.0 supports BDD test cases: The first column called "Description" should have simple plain text illustrating what each step does.
+2. 
 
 Demo
 ----------
 1. In the command line execute : `java -jar APITool_1.0.jar Runners\Sample2_Runner.xml`.
 2. It generates test-output directory which contains the TestNG HTML and XML reports.
+
+Future Work
+------------
+1. To integrate with Jira to log bugs automatically as soon as having bugs 
+2. To support Business Driven Develpment (BDD) test cases
+3. Simple GUI should be used to execute test suites instead of using command line
+
+![alt text](screenshots/filename.png "Description goes here")
