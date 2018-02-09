@@ -80,4 +80,5 @@ Future Work
 ------------
 1. To integrate with Jira to log bugs automatically as soon as having bugs > Done in Version 3.0
 2. To support Business Driven Development (BDD) test cases -> Done in Version 3.0
-3. Simple GUI should be used to execute test suites instead of using command line
+3. To support SOAP APIs tesing > Done in Version 2.0
+4. Simple GUI should be used to execute test suites instead of using command line
