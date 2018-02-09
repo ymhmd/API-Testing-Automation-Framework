@@ -1,0 +1,9 @@
+{
+	"enbale" : true,
+	"domain" : "your_jira_domain",
+	"email" : "your_email",
+	"password" : "your_password",
+	"projectKey" : "your_project_key",
+	"issueType" : "Bug/Task/Subtask ....",
+	"priority" : "Low/High ...."
+}
