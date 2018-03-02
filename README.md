@@ -7,10 +7,6 @@ Used tools and frameworks
 3. TestNG
 4. Jxl to extract test data from Excel files
 
-Projects
----------
-1. WebservicesTestZona was used to test RESTful webservices of My Vodafone Greece Mobile Application
-2. Now, WebservicesTestZona is used to test RESTful webservices of Mi Vodafone Spain Mobile Application
 
 Main features
 ----------------------------
