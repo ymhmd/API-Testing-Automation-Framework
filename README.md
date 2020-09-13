@@ -21,7 +21,7 @@ The predefined schema in that format:
 7. The framework validates the returned status code, response body, headers and cookies. It can validate each field data type and value. If the returned response includes object of arraylist, the framework can validate its size using the keyword ".size()"
 8. Can be integrated into DevOps environment to accelerate the delivery process. After each Jenkins deployment, test cases can be executed automatically and the generated XML reports can be passed to Jira to log Defects/Tests automatically. Some configurations needed in Jenkins side.
 9. Solves the complexity of testing correlated APIs as any test step can use data (body value, header or cookie) received in the previous steps. For example and more details you can check Sample_2 sheet in Excel test data. For more details about Keywords used and test data schema, you can have a look at the test data samples.
-10. Source code is available here: https://github.com/ymhmd/API-Testing-Automation-Framework-SourceCode
+10. Source code is available here: https://github.com/ymhmd/buenoAPI-SourceCode
 
 
 New Features in version 2.0
